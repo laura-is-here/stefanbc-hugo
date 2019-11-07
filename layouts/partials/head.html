@@ -1,0 +1,18 @@
+<head>
+    <title>{{ .Title }}</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    {{ hugo.Generator }}
+    {{ $sass := resources.Get "css/main.scss" }}
+    {{ $style := $sass | toCSS | postCSS | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto&display=swap" rel="stylesheet">
+    <meta name="description" content="Criminal defense lawyer that will fight for you in Long Beach and and the broader Souther California region.">
+    
+    <link href="/images/stefanlogo.svg"rel="shortcut icon" type="image/ico">
+    
+    {{ template "_internal/opengraph.html" . }}
+    <link href="https://stefanbc.law" rel="canonical">
+    <script src="https://kit.fontawesome.com/ee98754881.js" crossorigin="anonymous" defer></script>
+    <script src="/js/script.js" defer></script>
+</head>

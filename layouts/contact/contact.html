@@ -1,0 +1,49 @@
+{{ define "main" }}
+<main>
+    <div class="container">
+        <h1 class="h1">
+            Contact
+        </h1>
+        <p class="measure--md">
+            Please fill out the form below to contact me for more information regarding legal services. * indicates required field.
+        </p>
+        <form class="card card__body   bg-dark   measure--md" action="https://formspree.io/mknnnlbr" method="POST">
+            <fieldset>
+                <div class="form-row">
+                    <label for="name">
+                        * Name
+                    </label> 
+                    <input type="text" name="name" id="name" placeholder="Your name" required>
+                </div>
+                <div class="form-row">
+                    <label for="email">
+                        * Email
+                    </label> 
+                    <input type="email" name="email" id="email" placeholder="Your email" required>
+                </div>
+                <div class="form-row">
+                    <label for="name">
+                        * Phone
+                    </label> 
+                    <input type="text" name="phone" id="phone"placeholder="Your phone number" required>
+                </div>
+                <div class="form-row">
+                    <label for="message">
+                        Message
+                    </label>
+                    <textarea name="message" id="message" placeholder="Write your message here"></textarea>
+                </div>
+                <div class="form-row">
+                    <label for="terms" class="measure--md">
+                        By checking this box, you agree that you have read and understand the 
+                        <a href="/disclaimer/" class="anchor">
+                            terms and conditions.
+                        </a></label>
+                    <input type="checkbox" name="terms" id="terms">
+                    <input type="submit" id="submit" name="submit" disabled="true" value="Submit">
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</main> 
+{{ end}}
