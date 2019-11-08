@@ -203,8 +203,21 @@ input[type=submit]:focus {
 
 /* -------------------------------- $LINKS */
 
-.anchor {
-  color: $main-color;
+.anchor--dark {
+  color: $main-color-muted;
+  transition: 0.4s ease-in-out;
+  text-decoration: none;
+  
+  &:hover,
+  &:active,
+  &:focus {
+    color: $main-bg;
+    background-color: $main-color;
+  }
+}
+
+.anchor--bright {
+  color: $main-color-bright;
   transition: 0.4s ease-in-out;
   text-decoration: none;
   
@@ -508,5 +521,5 @@ input[type=submit]:focus {
 }
 
 .active {
-  color: $main-color;
+  color: $main-color-bright;
 }

@@ -1,5 +1,7 @@
 <head>
-    <title>{{ .Title }}</title>
+    {{ $title := print .Title " | " .Site.Title }}
+    {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
+    <title>{{ $title }}</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     {{ hugo.Generator }}
@@ -7,12 +9,11 @@
     {{ $style := $sass | toCSS | postCSS | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $style.Permalink }}">
     <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto&display=swap" rel="stylesheet">
-    <meta name="description" content="Criminal defense lawyer that will fight for you in Long Beach and and the broader Souther California region.">
-    
-    <link href="/images/stefanlogo.svg"rel="shortcut icon" type="image/ico">
+    <meta name="description" content="I am an attorney at law offering competent, affordable legal defense for clients of all economic, racial, and ethnic backgrounds across the Southern California area.">
+    <link href="/images/stefan.jpg"rel="shortcut icon" type="image/ico">
     
     {{ template "_internal/opengraph.html" . }}
-    <link href="https://stefanbc.law" rel="canonical">
+    <link href="https://stefanbc.com" rel="canonical">
     <script src="https://kit.fontawesome.com/ee98754881.js" crossorigin="anonymous" defer></script>
     <script src="/js/script.js" defer></script>
 </head>

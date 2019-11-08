@@ -1,6 +1,6 @@
 baseURL = "https://keen-shoes.surge.sh/"
 languageCode = "en-us"
-title = "Stefan BC Law"
+title = "Stefan BC at Law"
 disableKinds = ["taxonomy", "taxonomyTerm"]
 
 [menu]
@@ -19,7 +19,8 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
 
 [params]
   dateFormat = "Jan 2, 2006"
-  description = "Criminal defense attorney practicing law in the Southern California area."
+  description = "I am an attorney at law offering competent, affordable legal defense for clients of all economic, racial, and ethnic backgrounds across the Southern California area."
+  images = ["/images/stefan.jpg"]
 
 [blackfriday]
   hrefTargetBlank = true
