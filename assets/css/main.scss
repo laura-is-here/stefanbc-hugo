@@ -20,6 +20,7 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+  margin: 0 auto;
   
   @media #{$mq-medium} {
     font-size: $base-font-size*1.2;
@@ -54,6 +55,7 @@ main {
 h1, h2, h3, h4, h5, h6 {
   font-family: Oswald, Roboto, sans-serif;
   line-height: $header-line-height;
+  margin: 1.5rem 0 1.5rem 0;
 }
 
 .display--1 {
@@ -136,7 +138,6 @@ input, textarea {
   
   @media #{$mq-medium} {
     margin: 0.75rem;
-    justify-self: flex-end;
   }
 }
 
@@ -163,11 +164,6 @@ input[type=submit]:focus {
   display: flex;
   flex-flow: column nowrap;
   
-  @media #{$mq-medium} {
-    flex-flow: row nowrap;
-    align-items: center;
-    justify-content: flex-end;
-  }
 }
 
 
@@ -176,26 +172,14 @@ input[type=submit]:focus {
 
 .measure--sm {
   max-width: 30ch;
-  
-  &:last-child, &~h1, h2, h3, h4, h5, h6 {
-    margin-bottom: 3rem;
-  }
 }
 
 .measure--md {
   max-width: 50ch;
-  
-  &:last-child, &~h1, h2, h3, h4, h5, h6 {
-    margin-bottom: 3rem;
-  }
 }
 
 .measure--lg {
   max-width: 80ch;
-  
-  &:last-child, &~h1, h2, h3, h4, h5, h6 {
-    margin-bottom: 3rem;
-  }
 }
 
 
@@ -249,7 +233,7 @@ input[type=submit]:focus {
 .header-link {
   text-decoration: none;
   color: $main-color;
-  padding-bottom: 0.75rem;
+  padding-bottom: 0.25rem;
   
   &:active,
   &:focus,
@@ -277,31 +261,46 @@ input[type=submit]:focus {
   color: $main-bg;
 }
 .bg-light--gradient {
-  background: linear-gradient(#FFFFFF, $main-bg);
+  background-image: linear-gradient(#FFFFFF, #ECF0F1);
+  background-color: #ecf0f1;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .border-bottom {
   border-bottom: 5px solid $main-color;
 }
 
+.list-spacing > li {
+  padding: 0.25rem;
+}
 
+.img-float--right {
+  padding: 0;
+  margin: 0 0 0.25rem 0.25rem;
+  float: right;
+}
+
+.block {
+  display: block;
+}
 
 
 /* --------------------------- $CONTAINERS */
 
 .container {
-  margin: 0 0 0 8%;;
+  margin: 0 4%;;
   
   @media #{$mq-medium} {
-    margin: 0 0 0 16%;
+    margin: 0 8%;
   }
   
   @media #{$mq-large} {
-    margin: 0 0 0 32%;
+    margin: 0 16%;
   }
   
   @media #{$mq-xlarge} {
-    margin: 0 0 0 40%;
+    margin: 0 20%;
   }
 }
 
@@ -413,12 +412,6 @@ input[type=submit]:focus {
   }
 }
 
-.img-float--right {
-  padding: 0;
-  margin: 0 0 0.25rem 0.25rem;
-  float: right;
-}
-
 
 
 
@@ -437,10 +430,9 @@ input[type=submit]:focus {
 /* -------------------------------- $NAVIGATION */
 
 .navbar {
+  position: relative;
   top: 0;
-  background-color: $dark-bg;
   transition: 0.3s ease-in-out;
-  padding: 0.25rem 0.75rem;
   
   @media #{$mq-small} {
     display: flex;
@@ -456,8 +448,8 @@ input[type=submit]:focus {
 
 .js .menu-toggler {
   position: absolute;
-  right: 0.75rem;
-  top: 0.75rem;
+  top: 0;
+  right: 0;
   display: block;
   text-decoration: none;
   border: none;
@@ -488,8 +480,10 @@ input[type=submit]:focus {
   }
 }
 
-.nav__content {
-  display: block;
+.nav__content > li {
+  @media #{$mq-small} {
+    display: inline-block;
+  }
 }
 
 .js .show {
@@ -499,7 +493,6 @@ input[type=submit]:focus {
 .nav__links {
   list-style: none;
   padding: 0;
-  
 }
 
 .nav__link {
@@ -507,6 +500,9 @@ input[type=submit]:focus {
   text-decoration: none;
   display: block;
   color: $main-bg;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-align: right;
   
   &:hover,
   &:active {
