@@ -1,4 +1,4 @@
-baseURL = "https://keen-shoes.surge.sh/"
+baseURL = "https://stefanbclaw.com/"
 languageCode = "en-us"
 title = "Stefan BC at Law"
 disableKinds = ["taxonomy", "taxonomyTerm"]
