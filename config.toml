@@ -1,4 +1,4 @@
-baseURL = "https://stefanbclaw.com/"
+baseURL = "https://stefanbc.com/"
 languageCode = "en-us"
 title = "Stefan BC at Law"
 disableKinds = ["taxonomy", "taxonomyTerm"]
