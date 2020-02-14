@@ -20,7 +20,7 @@ npm --version
 Clone the repository and navigate into the directory in your shell.
 
 ```bash
-git clone https://github.com/laura-is-here/tiffany-hooton-therapy-hugo.git && cd tiffany-hooton-therapy-hugo
+git clone https://github.com/laura-is-here/stefanbc-hugo.git && cd stefanbc-hugo
 ```
 
 Install dependencies.
