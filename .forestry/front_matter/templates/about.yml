@@ -1,0 +1,19 @@
+---
+label: About
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: Title
+  hidden: true
+- type: file
+  name: aboutImage
+  label: Image
+  description: The image displayed next to the About Me section
+- type: text
+  name: aboutImageDescription
+  label: Image Description
+  description: Description of the image uploaded. i.e., a cartoon drawing of Stefan
+    BC smoking  a joint.
+  config:
+    required: false

@@ -1,0 +1,14 @@
+---
+label: Practice Area
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: Title
+  description: The page title and header to be displayed on other pages. Include SEO
+    terms.
+- type: text
+  name: excerpt
+  label: Excerpt
+  description: An excerpt giving a brief description of the practice area to be displayed
+    on other pages.
