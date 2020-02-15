@@ -271,7 +271,7 @@ input[type="submit"]:focus {
   color: $main-bg;
 }
 .bg-light--gradient {
-  background-image: radial-gradient(ellipse at bottom right, #ecf0f1, #accfa1);
+  background-image: radial-gradient(ellipse at center, #ecf0f1, #bccfb1);
   background-color: #ecf0f1;
   background-repeat: no-repeat;
   background-size: cover;
