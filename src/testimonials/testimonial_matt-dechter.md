@@ -5,6 +5,8 @@ clientDescription: "CEO at Belcosta Labs"
 excerpt: "Stefan assisted our company in locating a great city to operate in..."
 ---
 
+test
+
 Stefan assisted our company in locating a great city to operate in,
 as well as core personnel to staff our business. His knowledge of the
 Long Beach licensing process and municipal affairs landscape is
