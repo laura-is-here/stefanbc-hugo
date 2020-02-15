@@ -1,5 +1,58 @@
 ---
-layout: layouts/base.njk
-title: Title Strings
+title: Home
+layout: "layouts/baseof.njk"
+date: 2000-01-01
+tags: "menuMain"
 ---
-<h1>This is global data: {{siteData.name}}</h1>
+
+<main class="stack">
+  <div class="grid-container    ">
+    <div class="grid-item-1   measure--md">
+      <h1 class="h1">
+        <small class="opener accent-color-main margin--narrow"
+          >I'm Stefan Borst-Censullo,</small
+        ><br />
+        Long Beach Criminal Defense Lawyer
+      </h1>
+      <p class="">
+        I am an attorney at law offering competent, affordable legal defense
+        across the Southern California area.
+      </p>
+      <div class="">
+        <p>
+          I work zealously for clients of all economic, racial, and ethnic
+          backgrounds, as well as people of all sexual orientations and gender
+          identities, as they face extraordinarily difficult challenges in our
+          courts.
+        </p>
+        <h2 class="h2">
+          From Criminal Defense, to Traffic Citations<br />
+          <small>
+            Fighting for
+            <span class="accent-color-main">
+              You,
+            </span>
+            Fighting for
+            <span class="accent-color-main">
+              Social Justice
+            </span>
+          </small>
+        </h2>
+        <p>
+          I am driven by the cause of upholding human rights and the need to
+          preserve social justice inside of our legal system, whether that means
+          figthing a traffic citation or defending you in a criminal case.
+        </p>
+        <p>
+          With access to the courts often conditional on wealth, too many
+          disadvantaged people see their legal rights ignored. My firm will work
+          with clients to reduce economic barriers to achieving justice.
+        </p>
+      </div>
+    </div>
+    <div class="grid-item-2 flex-container--sm">
+      {% include "partials/sidebar.njk" %}
+    </div>
+    {% include "partials/testimonials.njk" %}
+  </div>
+</main>

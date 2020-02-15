@@ -1,3 +1,3 @@
-import list from './modules/list'
+import menuToggle from "./modules/script.js";
 
-console.log(`Hello ${list[0]}`)
+menuToggle();

@@ -1,0 +1,71 @@
+<form
+  class="container   card card__body   bg-dark  "
+  action="https://formspree.io/mknnnlbr"
+  method="POST"
+>
+  <h2 class="h1">
+    Contact
+  </h2>
+  <p class="measure--md">
+    Please fill out the form below to contact me for more information regarding
+    legal services. * indicates required field.
+  </p>
+  <fieldset>
+    <div class="form-row">
+      <label for="name">
+        * Name
+      </label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        placeholder="Your name"
+        required
+      />
+    </div>
+    <div class="form-row">
+      <label for="email">
+        * Email
+      </label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Your email"
+        required
+      />
+    </div>
+    <div class="form-row">
+      <label for="phone">
+        * Phone
+      </label>
+      <input
+        type="text"
+        name="phone"
+        id="phone"
+        placeholder="Your phone number"
+        required
+      />
+    </div>
+    <div class="form-row">
+      <label for="message">
+        Message
+      </label>
+      <textarea
+        name="message"
+        id="message"
+        placeholder="Write your message here"
+        rows="8"
+      ></textarea>
+    </div>
+    <div class="form-row">
+      <label for="submit" class="measure--md">
+        By submitting this form, you agree that you have read and understand the
+        <a href="/disclaimer/" class="anchor--bright">
+          terms and conditions.
+        </a></label
+      >
+      <input type="submit" id="submit" name="submit" value="Submit" />
+    </div>
+  </fieldset>
+</form>

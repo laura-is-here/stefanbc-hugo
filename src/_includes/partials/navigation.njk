@@ -1,0 +1,28 @@
+<nav role="navigation" class="navbar   bg-dark">
+  <a href="/" class="">
+    <img
+      src="/images/stefanlogo_edit.png"
+      height="30px"
+      alt="A logo displaying a cannabis leaf above a set of traditional scales (the scales of justice)"
+    />
+  </a>
+  <button
+    class="menu-toggler"
+    type="button"
+    id="menu-toggler"
+    aria-expanded="false"
+  >
+    <span class="block">Menu</span>
+    <i class="fas fa-bars"></i>
+  </button>
+
+  <ul class="nav__links nav__content">
+    {% for item in collections.menuMain %}
+    <li class="nav__link">
+      <a href="{{ item.url }}" class="nav__link">
+        {{ item.data.title }}
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</nav>

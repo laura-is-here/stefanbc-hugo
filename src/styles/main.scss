@@ -1,0 +1,543 @@
+@import "normalize";
+@import "variables";
+@import "extends";
+
+/*------------------------ $GENERAL */
+
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+body {
+  font-family: $main-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  color: $main-font-color;
+  background-color: $main-bg;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  margin: 0 auto;
+
+  @media #{$mq-medium} {
+    font-size: $base-font-size * 1.2;
+    line-height: $base-line-height * 1.2;
+  }
+
+  @media #{$mq-large} {
+    font-size: $base-font-size * 1.3;
+  }
+
+  @media #{$mq-xlarge} {
+    font-size: $base-font-size * 1.4;
+  }
+
+  @media #{$mq-xxlarge} {
+    font-size: $base-font-size * 1.6;
+  }
+}
+
+main {
+  flex: 1 0 0;
+}
+
+/* ------------------------------------ $TYPOGRAPHY */
+
+/* $HEADERS */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Oswald, Roboto, sans-serif;
+  line-height: $header-line-height;
+  margin: 1.5rem 0;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: Oswald, Roboto, sans-serif;
+  line-height: $header-line-height;
+}
+
+.display--1 {
+  font-size: 3.5rem;
+  font-weight: normal;
+  line-height: $header-line-height;
+  font-family: Oswald, Roboto, sans-serif;
+
+  @media #{$mq-medium} {
+    font-size: 4.5rem;
+  }
+}
+
+.display--2 {
+  font-size: 2rem;
+  font-weight: normal;
+  line-height: $header-line-height;
+  font-family: Oswald, Roboto, sans-serif;
+
+  @media #{$mq-medium} {
+    font-size: 3.5rem;
+  }
+}
+
+.h1 {
+  font-size: 3rem;
+  line-height: $header-line-height;
+}
+
+.h2 {
+  font-size: 2.25rem;
+  line-height: $header-line-height;
+}
+
+.h3 {
+  font-size: 1.5rem;
+  line-height: $header-line-height;
+}
+
+.h4 {
+  font-size: 1.25rem;
+  line-height: $header-line-height;
+}
+
+.h5 {
+  font-size: 1rem;
+  line-height: $header-line-height;
+}
+
+.h6 {
+  font-size: 0.875rem;
+  line-height: $header-line-height;
+}
+
+small {
+  font-size: 85%;
+  font-weight: lighter;
+}
+
+blockquote {
+  border-left: 4px solid gray;
+  color: gray;
+  padding-left: 0.75rem;
+}
+
+.opener {
+  font-family: Oswald, Roboto, sans-serif;
+  display: inline-block;
+}
+
+/* --------------------------- $FORMS */
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+input,
+textarea {
+  background-color: $main-bg;
+  margin: 0 0 0.75rem 0.75rem;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 5px;
+  resize: none;
+  box-shadow: inset 2px 3px 7px rgba(0, 0, 0, 0.3);
+
+  @media #{$mq-medium} {
+    margin: 0.75rem;
+  }
+}
+
+input[type="submit"] {
+  background-color: $main-bg;
+}
+
+input[type="submit"]:disabled,
+input[type="submit"]:disabled:hover,
+input[type="submit"]:disabled:active,
+input[type="submit"]:disabled:focus {
+  background-color: gray;
+  color: $main-font-color;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:active,
+input[type="submit"]:focus {
+  background-color: $main-color;
+  color: $main-bg;
+}
+
+.form-row {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+/* --------------------------- $SPACING */
+
+.measure--sm {
+  max-width: 30ch;
+}
+
+.measure--md {
+  max-width: 50ch;
+}
+
+.measure--lg {
+  max-width: 80ch;
+}
+
+/* -------------------------------- $LINKS */
+
+.anchor--dark {
+  color: $main-color-muted;
+  transition: 0.4s ease-in-out;
+  text-decoration: none;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: $main-bg;
+    background-color: $main-color;
+  }
+}
+
+.anchor--bright {
+  color: $main-color-bright;
+  transition: 0.4s ease-in-out;
+  text-decoration: none;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: $main-bg;
+    background-color: $main-color;
+  }
+}
+
+.anchor--inherit-style {
+  &:visited,
+  &:link {
+    all: inherit;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    all: inherit;
+    color: inherit;
+    cursor: pointer;
+  }
+}
+
+.header-link {
+  text-decoration: none;
+  color: $main-color;
+  padding-bottom: 0.25rem;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: $main-bg;
+    border-bottom: 5px solid $main-bg;
+  }
+}
+
+/* ------------------------- $UTILITIES */
+
+.accent-color-main {
+  color: $main-color;
+}
+
+.bold-color-main {
+  font-weight: bold;
+  color: $main-color;
+}
+
+.bg-dark {
+  background-color: $dark-bg;
+  color: $main-bg;
+}
+.bg-light--gradient {
+  background-image: radial-gradient(ellipse at bottom right, #ecf0f1, #accfa1);
+  background-color: #ecf0f1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.border-bottom {
+  border-bottom: 5px solid $main-color;
+}
+
+.list-spacing > li {
+  padding: 0.25rem;
+}
+
+.img-float--right {
+  padding: 0;
+  margin: 0 0 0.25rem 0.25rem;
+  float: right;
+}
+
+.block {
+  display: block;
+}
+
+.margin--narrow {
+  margin: 0.25rem 0;
+}
+
+/* --------------------------- $CONTAINERS */
+
+.container {
+  margin: 0 4%;
+
+  @media #{$mq-medium} {
+    margin: 0 8%;
+  }
+
+  @media #{$mq-large} {
+    margin: 0 16%;
+  }
+
+  @media #{$mq-xlarge} {
+    margin: 0 20%;
+  }
+}
+
+.flex-column {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+}
+
+.flex-container--sm {
+  display: flex;
+  flex-flow: column nowrap;
+  height: 100%;
+
+  @media #{$mq-small} {
+    flex-flow: row nowrap;
+  }
+
+  @media #{$mq-medium} {
+    flex-flow: column nowrap;
+  }
+}
+
+.flex-container--lg {
+  display: flex;
+  flex-flow: column nowrap;
+
+  @media #{$mq-small} {
+    flex-flow: row nowrap;
+  }
+}
+
+.grid-container--auto {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(70vw, 1fr));
+  align-items: start;
+  justify-content: space-between;
+  margin: 0 4%;
+
+  @media #{$mq-small} {
+    grid-template-columns: repeat(auto-fit, minmax(40vw, 1fr));
+  }
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0 4%;
+
+  @media #{$mq-medium} {
+    grid-gap: 0.75rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  @media #{$mq-large} {
+    grid-gap: 1.5rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+
+.grid-item-1 {
+  grid-area: 1 / 1 / 2 / 2;
+
+  @media #{$mq-medium} {
+    grid-area: 1 / 1 / 1 / 3;
+  }
+
+  @media #{$mq-large} {
+    grid-area: 1 / 1 / 1 / 4;
+  }
+}
+
+.grid-item-2 {
+  grid-area: 2 / 1 / 3 / 2;
+
+  @media #{$mq-medium} {
+    grid-area: 1 / 3 / 1 / 5;
+  }
+
+  @media #{$mq-large} {
+    grid-area: 1 / 4 / 1 / 6;
+  }
+}
+
+.grid-item-3 {
+  grid-area: 3 / 1 / 4 / 2;
+
+  @media #{$mq-medium} {
+    grid-area: 2 / 1 / 2 / 5;
+  }
+
+  @media #{$mq-large} {
+    grid-area: 2 / 1 / 2 / 6;
+  }
+}
+
+/* ----------------------- $CARDS */
+
+.card {
+  margin: 0.75rem;
+  border-radius: 5px;
+  box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.3), 0px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+.card__body {
+  padding: 1.5rem;
+}
+
+.card--alt {
+  margin: 0.75rem;
+  border-radius: 5px;
+  box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.3), 0px 3px 3px rgba(0, 0, 0, 0.3);
+
+  @media #{$mq-medium} {
+    margin: 1.5rem;
+  }
+}
+
+/* -------------------------------- $HEADER */
+
+.site-title {
+  padding: 0.75rem;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+/* -------------------------------- $NAVIGATION */
+
+.navbar {
+  position: relative;
+  top: 0;
+  transition: 0.3s ease-in-out;
+
+  @media #{$mq-small} {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.menu-toggler {
+  display: none;
+}
+
+.js .menu-toggler {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  text-decoration: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: $main-bg;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: $main-color;
+  }
+
+  @media #{$mq-small} {
+    display: none;
+  }
+}
+
+/* The following .js selectors are ordered to utilize the cascade to show the navigation menu. Don't change the order or the menu will break! */
+
+.js .nav__content {
+  display: none;
+  transition: 0.5s ease-in-out;
+
+  @media #{$mq-small} {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+}
+
+.js .show {
+  display: block;
+}
+
+.nav__links {
+  list-style: none;
+  padding: 0;
+}
+
+.nav__link {
+  padding: 0.25rem;
+  text-decoration: none;
+  display: block;
+  color: $main-bg;
+  font-size: 1.25rem;
+  font-weight: bold;
+
+  &:hover,
+  &:active {
+    color: $main-color;
+    background-color: $dark-bg;
+  }
+
+  @media #{$mq-small} {
+    padding: 0 0.5rem;
+  }
+}
+
+.active {
+  color: $main-color-bright;
+}
+
+.stack {
+  --space: 3.75rem;
+}
+
+.stack > * + * {
+  margin-top: var(--space);
+}
+
+.stack-exception,
+.stack-exception + * {
+  --space: 3rem;
+}

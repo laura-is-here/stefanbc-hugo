@@ -1,0 +1,51 @@
+<div class="card card__body   bg-dark   ">
+  <h2 class="h2">
+    <a href="/practice-areas/" class="header-link">
+      Practice Areas
+      <i class="fas fa-arrow-right"></i>
+    </a>
+  </h2>
+  <ul class="fa-ul   list-spacing">
+    {% for item in collections.practiceAreas %}
+    <li>
+      <h3 class="margin--narrow">
+        <a href="{{ item.url }}" class="header-link">
+          <span class="fa-li">
+            <i class="fas fa-gavel"></i>
+          </span>
+          {{ item.data.title }}
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </h3>
+    </li>
+    {% endfor %}
+    <li>
+      <h3 class="margin--narrow">
+        <span class="fa-li">
+          <i class="fas fa-file-alt"></i>
+        </span>
+        Local Business Licensing, including local & state cannabis permitting
+      </h3>
+    </li>
+    <li>
+      <h3 class="margin--narrow">
+        <span class="fa-li">
+          <i class="fas fa-child"></i>
+        </span>
+        Juvenile Law, including dependency and/or dependency actions
+      </h3>
+    </li>
+  </ul>
+</div>
+<div class="card card__body   bg-dark   ">
+  <h2 class="h2">
+    <a href="/contact/" class="header-link">
+      Contact Me
+      <i class="fas fa-arrow-right"></i>
+    </a>
+  </h2>
+  <p class="measure--md">
+    If you are looking for competent, affordable, legal services, please contact
+    me to schedule a free consultation.
+  </p>
+</div>

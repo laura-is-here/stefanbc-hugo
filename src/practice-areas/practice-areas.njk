@@ -1,0 +1,85 @@
+---
+title: Practice Areas
+layout: "layouts/baseof.njk"
+tags: "menuMain"
+---
+
+<main class="stack">
+  <div class="grid-container">
+    <div class="grid-item-1   measure--md">
+      <h1 class="h1">
+        Practice
+        <span class="accent-color-main">
+          Areas
+        </span>
+      </h1>
+      <h2 class="h2">
+        Competent, affordable legal services
+      </h2>
+      <p class="measure--md">
+        I provide legal services for a variety of different needs, including:
+      </p>
+      <ul class="fa-ul   measure--sm   list-spacing">
+        <li>
+          <span class="fa-li">
+            <i class="fas fa-gavel"></i>
+          </span>
+          Criminal Defense
+        </li>
+        <li>
+          <span class="fa-li">
+            <i class="fas fa-car-crash"></i>
+          </span>
+          Traffic Citations
+        </li>
+        <li>
+          <span class="fa-li">
+            <i class="fas fa-file-alt"></i>
+          </span>
+          Local Business Licensing, including local & state cannabis permitting
+        </li>
+        <li>
+          <span class="fa-li">
+            <i class="fas fa-child"></i>
+          </span>
+          Juvenile Law, including dependency and/or dependency actions
+        </li>
+      </ul>
+      <p class="measure--md">
+        Please <a href="/contact/" class="anchor--dark">contact me</a> for more
+        information or
+        <a href="#criminal-defense" class="anchor--dark">read more below.</a>
+      </p>
+    </div>
+    <div class="grid-item-2   flex-container--sm">
+      {% include "partials/sidebar.njk" %}
+    </div>
+    <div class="grid-container--auto grid-item-3">
+      {% for item in collections.practiceAreas %}
+      <div
+        id="criminal-defense"
+        class="card--alt card__body   flex-column    measure--md   bg-light--gradient"
+      >
+        <i class="fas fa-gavel fa-2x  bold-main"></i>
+        <h2 class="border-bottom    h2    measure--md">
+          {% if item.permalink != false %}
+          <a href="{{ item.url }}" class="anchor--dark   header-link">
+            {{ item.data.title }}
+          </a>
+          {% else %}
+          {{ item.data.title }}
+          {% endif %}
+        </h2>
+        <p>
+          {{ item.data.excerpt }}
+        </p>
+      </div>
+      {% endfor %}
+      </div>
+    </div>
+    <div class="container">
+
+        {% include "partials/contact.njk" %}
+    </div>
+  </div>
+</main>

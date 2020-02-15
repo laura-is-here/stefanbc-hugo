@@ -1,0 +1,18 @@
+---
+layout: "layouts/baseof.njk"
+---
+
+<main class="stack">
+  <div class="grid-container">
+    <div class="grid-item-1">
+      <h1 class="h1">
+        {{ title }}
+      </h1>
+      {{ content | safe }}
+    </div>
+    <div class="grid-item-2">
+      {% include "partials/contact.njk" %}
+    </div>
+  </div>
+</main>
+{{ end }}
