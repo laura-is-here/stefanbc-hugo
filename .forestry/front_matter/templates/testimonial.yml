@@ -1,0 +1,16 @@
+---
+label: Testimonial
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: clientName
+  label: clientName
+- type: text
+  name: clientDescription
+  label: clientDescription
+- type: text
+  name: excerpt
+  label: excerpt
