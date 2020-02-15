@@ -4,9 +4,19 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
+- type: document
+  path: src/about/about.md
+  label: About
+  match: "**/*"
 - type: directory
-  path: src
-  label: Content
+  path: src/testimonials
+  label: Testimonials
+  create: all
+  match: "**/*md"
+  exclude: njk
+- type: directory
+  path: src/practice-areas
+  label: Practice Areas
   create: all
   match: "**/*md"
   exclude: njk
