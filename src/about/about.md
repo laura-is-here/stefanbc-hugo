@@ -1,6 +1,6 @@
 ---
 title: "About Me"
-aboutImage: "/images/stefan.png"
+aboutImage: "/images/stefan2.png"
 aboutImageDescription: A cartoon image of Stefan Borst-Censullo
 ---
 

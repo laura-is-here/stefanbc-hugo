@@ -200,7 +200,6 @@ input[type="submit"]:focus {
 
 .anchor--dark {
   color: $main-color-muted;
-  transition: 0.4s ease-in-out;
   text-decoration: none;
 
   &:hover,
@@ -213,7 +212,6 @@ input[type="submit"]:focus {
 
 .anchor--bright {
   color: $main-color-bright;
-  transition: 0.4s ease-in-out;
   text-decoration: none;
 
   &:hover,
@@ -292,6 +290,16 @@ input[type="submit"]:focus {
   float: right;
 }
 
+.text-center {
+  text-align: center;
+}
+
+.rounded {
+  object-fit: cover;
+  border-bottom: 10px solid $main-color-muted;
+  clip-path: circle(50% at 50% 50%);
+}
+
 .block {
   display: block;
 }
@@ -354,7 +362,6 @@ input[type="submit"]:focus {
   grid-template-columns: repeat(auto-fit, minmax(70vw, 1fr));
   align-items: start;
   justify-content: space-between;
-  margin: 0 4%;
 
   @media #{$mq-small} {
     grid-template-columns: repeat(auto-fit, minmax(40vw, 1fr));
