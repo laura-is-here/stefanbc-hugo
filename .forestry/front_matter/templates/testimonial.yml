@@ -4,13 +4,20 @@ hide_body: false
 fields:
 - type: text
   name: title
-  label: title
+  label: Header
+  description: Include SEO keywords for the testimonial here. i.e., Orange County
+    Cannabis Licensing
 - type: text
   name: clientName
-  label: clientName
+  label: Client Name or Pseudonym
+  description: Displayed at the bottom of the card. Name or Pseudonym. i.e. Matthew
+    Dechter, "E"
 - type: text
   name: clientDescription
-  label: clientDescription
+  label: Client Description
+  description: The description of the client. i.e., CEO a Belcosta Labs or Inglewood
+    Client
 - type: text
   name: excerpt
-  label: excerpt
+  label: Excerpt
+  description: An excerpt from the testimonial to be displayed with the header.
