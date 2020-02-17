@@ -35,6 +35,8 @@ The left panel controls important data for each piece of content you add. Some o
 
 Let's take a look at the field that contains the **Title** for this piece of content.
 
-Since this 
+Since this page is live on your site, you can see how the **Title** field is used.
+
+Let's take a look.
 
 This page will give you all the pointers you need to get editing content with Forestry CMS.
