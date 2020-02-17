@@ -361,6 +361,7 @@ input[type="submit"]:focus {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(70vw, 1fr));
   align-items: start;
+  justify-content: space-between;
 
   @media #{$mq-small} {
     grid-template-columns: repeat(auto-fit, minmax(40vw, 1fr));
