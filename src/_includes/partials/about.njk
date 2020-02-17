@@ -1,10 +1,10 @@
 {% for item in collections.about %}
 <div class="grid-container--auto   card card__body    bg-dark">
-  <div class="grid-item-1   ">
+  <div class="">
     <h2 class="h1   accent-color-main">About Me</h2>
     {{ item.templateContent | safe }}
   </div>
-  <div class="grid-item-2   ">
+  <div class="">
     <figure>
       <img
         src="{{ item.data.aboutImage }}"
