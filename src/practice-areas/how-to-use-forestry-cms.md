@@ -11,25 +11,21 @@ Let's get editing!
 
 ## Getting Started
 
-You'll see a page like this when you sign into Forestry CMS.
+### Choosing some content to edit
 
-![The Forestry CMS Homepage.](/images/Screenshot_2020-02-17 forestry io.png)
+You'll see a page like this when you sign into Forestry CMS
 
 You'll use the sidebar on the left to get to editing content. This is a CMS (Content Management System) after all, so let's jump right into editing some content!
 
-### Choosing some content to edit
-
 Navigate to the "Practice Areas" section on the sidebar.
-
-![](/images/Screenshot_2020-02-17 forestry io(9).png)
 
 You should see a list of content already created in that section, like this:
 
-![](/images/Screenshot_2020-02-17 forestry io(10).png)Click on "How to Use Forestry CMS to Update Content on Your Site" and let's make some edits!
+Click on "How to Use Forestry CMS to Update Content on Your Site" and let's make some edits!
+
+### Editing data for your content
 
 After clicking the "How to Use Forestry CMS..." article, you should be looking at two panels.
-
-![](/images/Screenshot_2020-02-17 forestry io(11).png)
 
 The left panel controls important data for each piece of content you add. Some of this data will be included directly in the content you are editing, and some of it will be used in other places on your site.
 
