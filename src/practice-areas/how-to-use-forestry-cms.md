@@ -1,9 +1,7 @@
 ---
 title: How to Use Forestry CMS to Update Content on Your Site
-excerpt: ''
-
----
-This guide will walk you through how to best utilize Forestry CMS to manage content for your site.
+excerpt: ""
+---This guide will walk you through how to best utilize Forestry CMS to manage content for your site.
 
 This article is live on your site now, so you'll get to see what it's like to make edits in real time and get used to how those edits affect your site as a whole.
 
