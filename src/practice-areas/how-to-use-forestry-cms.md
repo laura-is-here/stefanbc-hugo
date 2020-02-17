@@ -23,4 +23,6 @@ After clicking the "How to Use Forestry CMS..." article, you should be looking a
 
 ![](/images/Screenshot_2020-02-17 forestry io(11).png)
 
+The left panel controls important data for each piece of content you add. Some of this data will be included directly in the content you are editing, and some of it will be used in other places on your site.
+
 This page will give you all the pointers you need to get editing content with Forestry CMS.
