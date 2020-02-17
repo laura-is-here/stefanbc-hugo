@@ -17,6 +17,8 @@ You'll see a page like this when you sign into Forestry CMS.
 
 You'll use the sidebar on the left to get to editing content. This is a CMS (Content Management System) after all, so let's jump right into editing some content!
 
+### Choosing some content to edit
+
 Navigate to the "Practice Areas" section on the sidebar.
 
 ![](/images/Screenshot_2020-02-17 forestry io(9).png)
