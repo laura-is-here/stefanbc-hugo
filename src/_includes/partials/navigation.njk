@@ -9,9 +9,9 @@
     <i class="fas fa-bars"></i>
   </button>
 
-  <ul class="nav__links nav__content">
+  <ul class="nav__content">
     {% for item in collections.menuMain %}
-    <li class="nav__link">
+    <li>
       <a href="{{ item.url }}" class="nav__link">
         {{ item.data.title }}
       </a>
