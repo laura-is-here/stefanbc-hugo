@@ -68,3 +68,29 @@ Click the save button in the top-right corner of the screen to save your changes
 ### Editing the content of your page
 
 Let's take a look at the editor panel on the right.
+
+![](/images/stefan_screenshot_forestry-editor-contet.png)
+
+Here is where you'll write more long-form content. The editor is **What You See Is What You Get,** which means that the bold text your write here will be bold on your page.
+
+You can use the dock at the bottom of the panel to access formatting. Just hover over each to get an idea of what it does!
+
+![](/images/stefan_screenshot_forestry-cms-formatting.png)
+
+Again, once you're done making edits, just click the save button in the top-right corner and your site will be updated in just a few minutes.
+
+#### A note on headings & SEO
+
+You may have noticed that you have access to different **heading levels** from Forestry's formatting palette.
+
+Headings are for a lot more than just highlighting certain text---they should give your content **organization and hierarchy,** both for human users and **bots.**
+
+Some of these bots look at headings to determine what your content is about, which affects --- you guessed it --- SEO.
+
+The most important takeaways:
+
+* Use headings to organize your content
+* Make sure your use of headings make sense and has some sense of hierarchy (i.e. this section is under the **A note on headings & SEO,** which is an H4, and is itself under the **Editing the content of your page** section, which is an H3, etc.)
+* **Do NOT use any level 1 headings in this editor!** The title of your post (from the data, i.e. **How to Use Forestry CMS...**) will be be used as the first level heading in your content
+
+We'll talk about how to add new content and other content types in another article. For now, get editing!
