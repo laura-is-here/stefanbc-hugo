@@ -1,9 +1,8 @@
 ---
 title: How to Use Forestry CMS to Update Content on Your Site
-excerpt: "This page will give you all the pointers you need to get editing content
-with Forestry CMS."
----
+excerpt: ''
 
+---
 This guide will walk you through how to best utilize Forestry CMS to manage content for your site.
 
 This article is live on your site now, so you'll get to see what it's like to make edits in real time and get used to how those edits affect your site as a whole.
@@ -50,7 +49,7 @@ here...
 
 and here.
 
-![](/images/stefan_screenshot_practice-area_card.png)
+![](/images/stefan_screenshot_practice-areas.png)
 
 It's also the title of this page itself, of course! But we'll get to that part more later.
 
@@ -63,3 +62,9 @@ Add the following to the **Excerpt** data field:
     This page will give you all the pointers you need to get editing content with Forestry CMS.
 
 Click the save button in the top-right corner of the screen to save your changes. Your site should just take a few minutes to update with your new excerpt:
+
+![](/images/stefan_screenshot_practice-areas_new.png)
+
+### Editing the content of your page
+
+Let's take a look at the editor panel on the right.
