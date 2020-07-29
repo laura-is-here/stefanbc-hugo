@@ -12,5 +12,3 @@ fields:
   label: Excerpt
   description: An excerpt giving a brief description of the practice area to be displayed
     on other pages.
-pages:
-- src/practice-areas/how-to-use-forestry-cms.md
