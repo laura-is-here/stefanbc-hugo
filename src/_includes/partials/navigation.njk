@@ -1,18 +1,15 @@
-<nav role="navigation" class="navbar   bg-dark">
-  <button
-    class="menu-toggler"
-    type="button"
-    id="menu-toggler"
-    aria-expanded="false"
-  >
+<nav role="navigation" class="md:flex md:flex-row md:items-center md:justify-between w-full relative">
+  <button class="menu-toggler relative left-0 top-0 m-2 md:hidden" type="button" id="menu-toggler"
+    aria-expanded="false">
     <span class="block">Menu</span>
     <i class="fas fa-bars"></i>
   </button>
 
-  <ul class="nav__content">
+  <ul class="nav__content hidden md:flex md:flex-row md:flex-wrap p-2 text-xl max-w-screen-lg font-bold">
     {% for item in collections.menuMain %}
     <li>
-      <a href="{{ item.url }}" class="nav__link">
+      <a href="{{ item.url }}"
+        class="leading-tight block mb-2 md:mr-2 hover:text-green-300 border-r-4 border-green-300 pr-2">
         {{ item.data.title }}
       </a>
     </li>

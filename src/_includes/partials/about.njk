@@ -1,24 +1,21 @@
 {% for item in collections.about %}
-<div class="grid-container--auto   card card__body    bg-dark">
-  <div class="">
-    <h2 class="h1   accent-color-main">About Me</h2>
-    {{ item.templateContent | safe }}
+<div class="flex flex-row flex-wrap mx-auto max-w-screen-lg p-4">
+  <div class="w-full md:w-1/2 px-2">
+    <h2 class="font-display font-bold text-4xl text-green-700 leading-tight mb-2">About Me</h2>
+    <div class="markdown">
+
+      {{ item.templateContent | safe }}
+    </div>
   </div>
-  <div class="">
-    <figure>
-      <img
-        src="{{ item.data.aboutImage }}"
-        alt="{{ item.data.aboutImageDescription }}"
-        width="100%"
-        class="rounded"
-      />
-      <figcaption class="h3   text-center">
-        Don't wait to get proper legal representation.
-        <a href="/contact/" class="anchor--bright">Contact me now</a> for a free
-        consultation, and let's get to work.<br />
-        <span class="accent-color-main">- Stefan BC</span>
-      </figcaption>
-    </figure>
-  </div>
+  <figure class="p-4 md:w-1/2">
+    <img src="{{ item.data.aboutImage }}" alt="{{ item.data.aboutImageDescription }}" width="100%"
+      class="rounded-full mb-2" />
+    <figcaption class="font-display text-center text-xl leading-tight">
+      Don't wait to get proper legal representation.
+      <a href="/contact/" class="text-green-800">Contact me now</a> for a free
+      consultation, and let's get to work.<br />
+      <span class="text-green-800">- Stefan BC</span>
+    </figcaption>
+  </figure>
 </div>
 {% endfor %}

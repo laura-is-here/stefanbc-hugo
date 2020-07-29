@@ -4,22 +4,22 @@ layout: "layouts/baseof.njk"
 tags: "menuMain"
 ---
 
-<main class="stack">
-  <div class="grid-container">
-    <div class="grid-item-1   ">
-      <h1 class="h1">
+<main class="">
+  <div class="flex flex-row flex-wrap justify-around mx-auto">
+    <div class="w-full md:w-1/2   ">
+      <h1 class="font-display font-bold text-4xl leading-tight mb-2">
         Practice
-        <span class="accent-color-main">
+        <span class="text-green-700">
           Areas
         </span>
       </h1>
-      <h2 class="h2">
+      <h2 class="font-display font-bold text-4xl leading-tight mb-2">
         Competent, affordable legal services
       </h2>
-      <p class="measure--md">
+      <p class="mb-4">
         I provide legal services for a variety of different needs, including:
       </p>
-      <ul class="fa-ul   measure--sm   list-spacing">
+      <ul class="fa-ul  mb-4">
         <li>
           <span class="fa-li">
             <i class="fas fa-gavel"></i>
@@ -45,41 +45,36 @@ tags: "menuMain"
           Juvenile Law, including dependency and/or dependency actions
         </li>
       </ul>
-      <p class="measure--md">
-        Please <a href="/contact/" class="anchor--dark">contact me</a> for more
+      <p class="mb-4">
+        Please <a href="/contact/" class="text-green-700">contact me</a> for more
         information or
-        <a href="#criminal-defense" class="anchor--dark">read more below.</a>
+        <a href="#criminal-defense" class="text-green-700">read more below.</a>
       </p>
     </div>
-    <div class="grid-item-2   flex-container--sm">
+    <div class="w-full md:w-1/3">
       {% include "partials/sidebar.njk" %}
     </div>
-    <div class="grid-container--auto grid-item-3">
-      {% for item in collections.practiceAreas %}
-      <div
-        id="criminal-defense"
-        class="card--alt card__body   flex-column    bg-light--gradient"
-      >
-        <i class="fas fa-gavel fa-2x  bold-main"></i>
-        <h2 class="border-bottom    h2    measure--md">
-          {% if item.permalink != false %}
-          <a href="{{ item.url }}" class="anchor--dark   header-link">
+    <div class="w-full mx-auto">
+      <ul class="flex flex-row flex-wrap bg-gray-900 text-gray-100 text-base text-center">
+        {% for item in collections.practiceAreas %}
+        <li class="bg-gray-900 text-gray-100 p-8 mb-6 px-8 py-8 md:px-16 md:w-1/2 w-full">
+          <h2 class="font-display font-bold text-4xl leading-tight">
+            {% if item.permalink != false %}
+            <a href="{{ item.url }}" class="hover:text-green-200">
+              {{ item.data.title }}
+            </a>
+            {% else %}
             {{ item.data.title }}
-          </a>
-          {% else %}
-          {{ item.data.title }}
-          {% endif %}
-        </h2>
-        <p>
-          {{ item.data.excerpt }}
-        </p>
-      </div>
-      {% endfor %}
-      </div>
+            {% endif %}
+          </h2>
+          <p class="italic">
+            {{ item.data.excerpt }}
+          </p>
+        </li>
+        {% endfor %}
+      </ul>
     </div>
-    <div class="container">
+  </div>
 
-        {% include "partials/contact.njk" %}
-    </div>
   </div>
 </main>

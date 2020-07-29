@@ -1,0 +1,70 @@
+@tailwind base;
+
+.markdown {
+  @apply overflow-auto;
+}
+
+.markdown h1,
+.markdown h2,
+.markdown h3,
+.markdown h4,
+.markdown h5,
+.markdown h6 {
+  @apply leading-tight font-bold font-display mb-2;
+}
+
+.markdown h1 {
+  @apply text-6xl;
+}
+
+.markdown h2 {
+  @apply text-4xl;
+}
+
+.markdown h3 {
+  @apply text-2xl;
+}
+
+.markdown h4 {
+  @apply text-xl;
+}
+
+.markdown p {
+  @apply mb-4;
+}
+
+.markdown blockquote {
+  @apply p-4 mb-6 text-2xl text-center italic font-display font-bold bg-green-800 text-white;
+}
+
+.markdown blockquote p {
+  @apply mb-2 leading-tight;
+}
+
+.markdown a {
+  @apply text-green-700;
+}
+
+.markdown ul {
+  @apply mb-4 px-4 list-disc list-inside;
+}
+
+.markdown ol {
+  @apply mb-4 px-4 list-decimal list-inside;
+}
+
+.mardkown li {
+  @apply mb-2;
+}
+
+.markdown img {
+  @apply mb-6 mx-auto;
+}
+
+.markdown pre {
+  @apply mb-4 bg-white p-2 overflow-auto;
+}
+
+@tailwind components;
+
+@tailwind utilities;

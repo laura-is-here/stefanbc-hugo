@@ -1,71 +1,44 @@
-<form
-  class="container   card card__body   bg-dark  "
-  action="https://formspree.io/mknnnlbr"
-  method="POST"
->
-  <h2 class="h1">
+<form class=" " action="https://formspree.io/mknnnlbr" method="POST">
+  <h2 class="font-display font-bold text-4xl leading-tight mb-2">
     Contact
   </h2>
-  <p class="measure--md">
+  <p class="mb-4">
     Please fill out the form below to contact me for more information regarding
     legal services. * indicates required field.
   </p>
   <fieldset>
-    <div class="form-row">
-      <label for="name">
+    <div class="flex flex-col flex-wrap items-start justify-center mb-2">
+      <label for="name" class="">
         * Name
       </label>
-      <input
-        type="text"
-        name="name"
-        id="name"
-        placeholder="Your name"
-        required
-      />
+      <input type="text" name="name" id="name" placeholder="Your name" required class="form-input" />
     </div>
-    <div class="form-row">
-      <label for="email">
+    <div class="flex flex-col flex-wrap items-start justify-center mb-2">
+      <label for="email" class="mr-2">
         * Email
       </label>
-      <input
-        type="email"
-        name="email"
-        id="email"
-        placeholder="Your email"
-        required
-      />
+      <input type="email" name="email" id="email" placeholder="Your email" required class="form-input" />
     </div>
-    <div class="form-row">
-      <label for="phone">
+    <div class="flex flex-col flex-wrap items-start justify-center mb-2">
+      <label for="phone" class="">
         * Phone
       </label>
-      <input
-        type="text"
-        name="phone"
-        id="phone"
-        placeholder="Your phone number"
-        required
-      />
+      <input type="text" name="phone" id="phone" placeholder="Your phone number" required class="form-input" />
     </div>
-    <div class="form-row">
-      <label for="message">
+    <div class="flex flex-col flex-wrap items-start justify-center mb-2">
+      <label for="message" class="">
         Message
       </label>
-      <textarea
-        name="message"
-        id="message"
-        placeholder="Write your message here"
-        rows="8"
-      ></textarea>
+      <textarea name="message" id="message" placeholder="Write your message here" rows="8"
+        class="form-textarea"></textarea>
     </div>
-    <div class="form-row">
-      <label for="submit" class="measure--md">
+    <div class="flex flex-col flex-wrap items-start justify-center mb-2 ">
+      <label for="submit" class="mb-2">
         By submitting this form, you agree that you have read and understand the
         <a href="/disclaimer/" class="anchor--bright">
           terms and conditions.
-        </a></label
-      >
-      <input type="submit" id="submit" name="submit" value="Submit" />
+        </a></label>
+      <input type="submit" id="submit" name="submit" value="Submit" class="form-input text-gray-900 cursor-pointer" />
     </div>
   </fieldset>
 </form>

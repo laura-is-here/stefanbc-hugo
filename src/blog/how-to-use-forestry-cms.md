@@ -1,8 +1,8 @@
 ---
 title: How to Use Forestry CMS to Update Content on Your Site
-excerpt: ''
-
+excerpt: ""
 ---
+
 This guide will walk you through how to best utilize Forestry CMS to manage content for your site.
 
 This article is live on your site now, so you'll get to see what it's like to make edits in real time and get used to how those edits affect your site as a whole.
@@ -63,6 +63,10 @@ Add the following to the **Excerpt** data field:
 
 Click the save button in the top-right corner of the screen to save your changes. Your site should just take a few minutes to update with your new excerpt:
 
+> This is a blockquote.
+> “No one is going to give you the education you need to overthrow them. Nobody is going to teach you your true history, teach you your true heroes, if they know that that knowledge will help set you free.”
+> ― Assata Shakur
+
 ![](/images/stefan_screenshot_practice-areas_new.png)
 
 ### Editing the content of your page
@@ -89,8 +93,8 @@ Some of these bots look at headings to determine what your content is about, whi
 
 The most important takeaways:
 
-* Use headings to organize your content
-* Make sure your use of headings make sense and has some sense of hierarchy (i.e. this section is under the **A note on headings & SEO,** which is an H4, and is itself under the **Editing the content of your page** section, which is an H3, etc.)
-* **Do NOT use any level 1 headings in this editor!** The title of your post (from the data, i.e. **How to Use Forestry CMS...**) will be be used as the first level heading in your content
+- Use headings to organize your content
+- Make sure your use of headings make sense and has some sense of hierarchy (i.e. this section is under the **A note on headings & SEO,** which is an H4, and is itself under the **Editing the content of your page** section, which is an H3, etc.)
+- **Do NOT use any level 1 headings in this editor!** The title of your post (from the data, i.e. **How to Use Forestry CMS...**) will be be used as the first level heading in your content
 
 We'll talk about how to add new content and other content types in another article. For now, get editing!

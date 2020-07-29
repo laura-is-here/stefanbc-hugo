@@ -1,27 +1,30 @@
-<div class="grid-item-3    ">
-  <h2 class="h1">
+<div class="bg-gray-900 text-gray-100 p-4 ">
+  <h2 class="text-center text-4xl md:text-6xl font-display font-bold leading-tight mb-4">
     Testimonials
   </h2>
-  <div class="grid-container--auto">
+  <ul class="flex flex-row flex-wrap">
     {% for item in collections.testimonials %}
-    <div class="card--alt card__body    bg-light--gradient">
-      <h3 class="margin--narrow">
-        {{ item.data.title }}
+    <li class="px-8 py-8 md:px-16 md:w-1/2 ">
+      <h3 class="font-display text-2xl leading-tight mb-4">
+        {{ item.data.title }} &mdash;
         {% if item.data.excerpt %}
-        <span class="margin--narrow   opener   h2   accent-color-main">
+        <span class="leading-tight text-green-200">
           {{ item.data.excerpt }}
         </span>
         {% endif %}
       </h3>
-      {{ item.templateContent | safe }}
-      <span class="h2 margin--narrow">
-        {{ item.data.clientName }}
-        <small class="accent-color-main">
+      <div class="text-base mb-2 italic">
+
+        {{ item.templateContent | safe }}
+      </div>
+      <span class="font-display font-bold ">
+        {{ item.data.clientName }} &mdash;
+        <small class="text-green-200">
           {{ item.data.clientDescription }}
         </small>
       </span>
-    </div>
+    </li>
     {% endfor %}
-  </div>
-  {% include "partials/about.njk" %}
+  </ul>
+
 </div>

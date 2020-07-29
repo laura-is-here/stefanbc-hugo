@@ -267,6 +267,10 @@ input[type="submit"]:focus {
 
 /* ------------------------- $UTILITIES */
 
+.color-light {
+  color: $main-bg;
+}
+
 .accent-color-main {
   color: $main-color;
 }
@@ -280,6 +284,7 @@ input[type="submit"]:focus {
   background-color: $dark-bg;
   color: $main-bg;
 }
+
 .bg-light--gradient {
   background-image: radial-gradient(ellipse at center, #ecf0f1, #bccfb1);
   background-color: #ecf0f1;

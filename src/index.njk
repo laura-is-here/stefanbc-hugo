@@ -5,54 +5,54 @@ date: 2000-01-01
 tags: "menuMain"
 ---
 
-<main class="stack">
-  <div class="grid-container    ">
-    <div class="grid-item-1">
-      <h1 class="h1">
-        <small class="opener accent-color-main margin--narrow"
-          >I'm Stefan Borst-Censullo,</small
-        ><br />
+<main class="mb-12">
+  <div class="flex flex-row flex-wrap justify-around mx-auto">
+    <div class="p-2 w-full md:w-1/2 mb-6">
+      <h1 class="text-4xl leading-tight font-display mb-2 font-bold">
+        <small class="text-green-700  ">I'm Stefan Borst-Censullo,</small>
         Long Beach Criminal Defense Lawyer
       </h1>
-      <p class="">
+      <p class="mb-4">
         I am an attorney at law offering competent, affordable legal defense
         across the Southern California area.
       </p>
-      <div class="">
-        <p>
-          I work zealously for clients of all economic, racial, and ethnic
-          backgrounds, as well as people of all sexual orientations and gender
-          identities, as they face extraordinarily difficult challenges in our
-          courts.
-        </p>
-        <h2 class="h2">
-          From Criminal Defense, to Traffic Citations<br />
-          <small>
-            Fighting for
-            <span class="accent-color-main">
-              You,
-            </span>
-            Fighting for
-            <span class="accent-color-main">
-              Social Justice
-            </span>
-          </small>
-        </h2>
-        <p>
-          I am driven by the cause of upholding human rights and the need to
-          preserve social justice inside of our legal system, whether that means
-          figthing a traffic citation or defending you in a criminal case.
-        </p>
-        <p>
-          With access to the courts often conditional on wealth, too many
-          disadvantaged people see their legal rights ignored. My firm will work
-          with clients to reduce economic barriers to achieving justice.
-        </p>
-      </div>
+      <p class="mb-6">
+        I work zealously for clients of all economic, racial, and ethnic
+        backgrounds, as well as people of all sexual orientations and gender
+        identities, as they face extraordinarily difficult challenges in our
+        courts.
+      </p>
+      <h2 class="text-4xl leading-tight font-display mb-2 font-bold">
+        From Criminal Defense, to Traffic Citations<br />
+        <small>
+          Fighting for
+          <span class="text-green-700">
+            You,
+          </span>
+          Fighting for
+          <span class="text-green-700">
+            Social Justice
+          </span>
+        </small>
+      </h2>
+      <p class="mb-4">
+        I am driven by the cause of upholding human rights and the need to
+        preserve social justice inside of our legal system, whether that means
+        figthing a traffic citation or defending you in a criminal case.
+      </p>
+      <p class="mb-4">
+        With access to the courts often conditional on wealth, too many
+        disadvantaged people see their legal rights ignored. My firm will work
+        with clients to reduce economic barriers to achieving justice.
+      </p>
     </div>
-    <div class="grid-item-2 flex-container--sm">
+    <div class="w-full md:w-1/3 p-4 mb-6">
       {% include "partials/sidebar.njk" %}
     </div>
-    {% include "partials/testimonials.njk" %}
+    <div class="flex flex-row flex-wrap mx-auto mb-12">
+
+      {% include "partials/testimonials.njk" %}
+    </div>
+    {% include "partials/about.njk" %}
   </div>
 </main>

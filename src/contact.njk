@@ -4,33 +4,39 @@ layout: "layouts/baseof.njk"
 tags: "menuMain"
 ---
 
-<div class="grid-container">
-  <div class="grid-item-1">
-    {% include "partials/contact.njk"%}
-  </div>
-  <div class="grid-item-2">
-    <div class="card card__body    bg-dark">
-      <h2 class="h1">
-        Practice Information
-      </h2>
-      <p class="measure--sm">
-        Email:
-        <a href="mailto:cannabarrister@gmail.com" class="anchor--bright">
-          cannabarrister@gmail.com
-        </a>
-      </p>
-      <p class="measure--sm">
-        Phone:
-        <a href="tel:" class="anchor--bright">
-          562-704-6071
-        </a>
-      </p>
-      <p class="measure--sm">
-        Mailing Address:<br />
-        PO Box 20593<br />
-        Long Beach, CA 90802
-      </p>
+<main>
+  <div class="flex flex-row flex-wrap justify-around mx-auto">
+    <div class="w-full md:w-1/2 p-2 mb-6">
+      {% include "partials/contact.njk"%}
     </div>
-    {% include "partials/sidebar.njk" %}
+    <div class="w-full md:w-1/3">
+      <div class="bg-gray-900 text-gray-100 p-8 rounded-lg shadow-xl mb-6">
+        <h2 class="text-4xl font-display mb-2 leading-tight">
+          Practice Information
+        </h2>
+        <ul>
+          <li class="">
+            Email:
+            <a href="mailto:cannabarrister@gmail.com" class="hover:text-green-200">
+              cannabarrister@gmail.com
+            </a>
+          </li>
+          <li class="">
+            Phone:
+            <a href="tel:" class="hover:text-green-200">
+              562-704-6071
+            </a>
+          </li>
+          <li class="measure--sm">
+            Mailing Address:<br />
+            PO Box 20593<br />
+            Long Beach, CA 90802
+          </li>
+
+        </ul>
+      </div>
+      {% include "partials/sidebar.njk" %}
+    </div>
   </div>
-</div>
+
+</main>
